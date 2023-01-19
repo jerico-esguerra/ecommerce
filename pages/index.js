@@ -2,10 +2,10 @@ import React from 'react';
 import { HeroBanner, FooterBanner, Product } from '../components';
 import { client } from '../lib/client';
 
-const Home = ({products, bannerData}) => {
+const Home = ({ products, bannerData }) => {
   return (
     <>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
       <div className='products-heading'>
         <h2>Top Selling Products</h2>
@@ -17,7 +17,7 @@ const Home = ({products, bannerData}) => {
           (product) => product
         )}
 
-        <FooterBanner />
+        <FooterBanner footerBanner={bannerData && bannerData[0]} />
       </div>
     </>
   )
