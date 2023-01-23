@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Ecommerce App
+
+## Overview
+A fully responsive full stack ecommerce application with payments functionality. The application utilizes a CMS that enables the addition and edit of products. Moreover, advanced cart functionalities and use of Stripe to accept payments is integrated.
+
+## Key Topics
+Built using modern technologies:
+
+* ReactJS
+* NextJS
+* Sanity
+* Stripe
+* React Context API
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository (e.g., using `create-next-app`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+	`npx create-next-app -e https://github.com/jerico-esguerra/ecommerce-app project-name`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create .env file containing your own variables (reference **.env.example**) and configure ***lib/client.js*** to your own sanity backend.
+3. Run locally: `npm run dev`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Deployment
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Create a new [Github](https://github.com/) repository that contains your ecommerce application code.
+2. Login to [Vercel](https://vercel.com/login) with Github and import your Git repository.
+3. Add your environment variables to Vercel and "authorize" the domain (e.g., add the domain to sanity CORS Origins).
+4. DEPLOY!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- - -
+© 2023 Jerico Esguerra. All Rights Reserved.
